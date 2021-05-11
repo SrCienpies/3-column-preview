@@ -1,0 +1,122 @@
+@import "./components/colors";
+@import "./components/fonts";
+
+
+*{
+    font-size: 15px;
+    font-family: $lexend;
+}
+
+.container{
+    background-color: $light-gray;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 90px auto;
+}
+
+.pad{
+    padding: 50px;
+}
+
+
+section{
+
+    h2{
+        font-family: $big;
+        font-size: 2.5em;
+        color: $light-gray;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: $t-white;
+        line-height: 1.5em;
+    }
+
+    button{
+        background-color: $light-gray;
+        box-shadow: 0px 0px 0px transparent;
+        // border: 0px solid transparent;
+        text-shadow: 0px 0px 0px transparent;
+        text-transform: capitalize;
+        text-align: center;
+    
+        padding: 12px 27px;
+        border-radius: 3em;
+        border: 2px solid $light-gray;
+    
+        margin: 15px 0;
+        transition: all 0.2s;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:active{
+            border: 2px solid $light-gray;
+            background-color: transparent;
+            color:$light-gray;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        height: 450px;
+        margin: auto;
+    }
+
+    section{
+
+        p{
+            font-size: 14px;
+        }
+
+        button{
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+// ============================ COLORS
+
+.bg-color1{
+    background-color: $orange;
+}
+
+.bg-color2{
+    background-color: $light-cyan;
+}
+
+.bg-color3{
+    background-color: $dark-cyan;
+}
+
+.txt-color1{
+    color: $orange;
+}
+
+.txt-color2{
+    color: $light-cyan;
+}
+.txt-color3{
+    color: $dark-cyan;
+}
