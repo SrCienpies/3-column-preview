@@ -34,7 +34,7 @@ section{
 
     h2{
         font-family: $big;
-        font-size: 2.5em;
+        font-size: 3em;
         color: $light-gray;
         text-transform: uppercase;
     }
@@ -77,20 +77,15 @@ section{
         display: flex;
         flex-direction: row;
         width: 900px;
-        height: 450px;
+        height: 500px;
         margin: auto;
     }
 
     section{
 
-        p{
-            font-size: 14px;
-        }
-
         button{
-            margin-top: 50px;
+            margin-top: 75px;
             margin-bottom: 25px;
-            font-size: 14px;
         }
     }
 
